@@ -10,12 +10,13 @@ app.use(express.static(__dirname));
 // Conexão com MySQL
 const db = mysql.createConnection({
     host: 'gateway01.us-east-1.prod.aws.tidbcloud.com',
+    port: 4000,
     user: '3njGfzkWgYyfAhQ.root',
     password: 'RPQ1T78Pbwpt27wp', // coloque sua senha correta
-    database: 'banco_filmes'
+    database: 'banco_filmes',
     ssl: {
         minVersion: 'TLSv1.2',
-        rejectUnauthorized: true;
+        rejectUnauthorized: true
     }
 });
 // Testar conexão
