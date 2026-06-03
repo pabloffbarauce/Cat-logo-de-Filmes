@@ -1,0 +1,144 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(236, 236, 236);
+    color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.titulo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(30, 60, 114);
+    color: white;
+    width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.titulo-card h1 {
+    font-size: 28px;
+}
+
+.formularios input, select {
+    padding: 10px 14px;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.2s;
+}
+
+.formularios label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: rgb(77, 77, 77);
+}
+
+.formularios input:focus {
+    outline: none;
+    border-color: rgb(42, 82, 152);
+}
+
+.formularios select:focus {
+    outline: none;
+    border-color: rgb(42, 82, 152);
+}
+
+.formularios textarea.caixa-descricao:focus {
+    outline: none;
+    border-color: rgb(42, 82, 152);
+}
+
+button {
+    width: 210px;
+    padding: 12px;
+    background-color: rgb(42, 82, 152);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: rgb(30, 60, 114);
+}
+
+.formularios textarea.caixa-descricao {
+    padding: 10px 14px;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 6px;
+    font-size: 16px;
+    width: 210px;
+    background-color: white;
+    height: 100px;
+    resize: none;
+    vertical-align: bottom;
+}
+
+a{
+    color: rgb(42, 82, 152);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+.card-filme {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 8px;
+    padding: 16px;
+    width: 240px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-filme:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card-filme h3 {
+    margin: 0 0 10px 0;
+    color: rgb(30, 60, 114);
+}
+
+.card-filme p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.botao-excluir{
+    margin-top: auto;
+    background-color: rgb(190, 40, 40);
+    width: 100%;
+    padding: 8px;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.botao-excluir:hover {
+    background-color: rgb(140, 20, 20);
+}
