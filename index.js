@@ -3,15 +3,15 @@ const express = require('express');
 const mysql = require('mysql2');
 // Criar aplicação
 const app = express();
-const port = 3000;
+const port = 4000;
 // Permitir receber dados de formulário (HTML)
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 // Conexão com MySQL
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '123456', // coloque sua senha correta
+    host: 'gateway01.us-east-1.prod.aws.tidbcloud.com',
+    user: '3njGfzkWgYyfAhQ.root',
+    password: 'RPQ1T78Pbwpt27wp', // coloque sua senha correta
     database: 'banco_filmes'
 });
 // Testar conexão
