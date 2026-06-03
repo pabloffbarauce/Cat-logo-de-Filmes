@@ -13,6 +13,10 @@ const db = mysql.createConnection({
     user: '3njGfzkWgYyfAhQ.root',
     password: 'RPQ1T78Pbwpt27wp', // coloque sua senha correta
     database: 'banco_filmes'
+    ssl: {
+        minVersion: 'TLSv1.2',
+        rejectUnauthorized: true;
+    }
 });
 // Testar conexão
 db.connect((err) => {
