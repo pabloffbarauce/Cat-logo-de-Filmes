@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h3>${filme.nome}</h3>
                         <p><strong>Categoria:</strong> ${filme.categoria || 'Não informada'}</p>
                         <p><strong>Descrição:</strong> ${filme.descricao || 'Sem descrição'}</p>
-                        <p><strong>Nota:</strong> ${filme.nota}/10</p>
+                        <p><strong>Nota:</strong> ${filme.nota}</p>
                         <button class="botao-excluir" data-id="${filme.id}">Excluir</button>
                     `;
 
