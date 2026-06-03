@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('container-cards');
 
     function carregarFilmes() {
-        fetch('http://localhost:3000/filmes')
+        fetch('/filmes')
             .then(res => res.json())
             .then(filmes => {
                 container.innerHTML = '';
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const id = e.target.getAttribute('data-id');
                 
                 if (confirm('Deseja realmente excluir este filme?')) {
-                    fetch(`http://localhost:3000/deletar-filme/${id}`, { method: 'DELETE' })
+                    fetch(`/deletar-filme/${id}`, { method: 'DELETE' })
                         .then(res => res.text())
                         .then(resposta => {
                             alert(resposta);
